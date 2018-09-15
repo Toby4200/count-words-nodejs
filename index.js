@@ -43,6 +43,7 @@ function countWords(string) {
         console.log('stats', stats);
         /* `stats` is the object that we'll be building up over time.
            `word` is each individual entry in the `matchedWords` array */
+        // toDo --> deal with toString problem when call hasOwnProperty
         if ( Object.prototype.hasOwnProperty.call(stats, word ) ) {
             /* `stats` already has an entry for the current `word`.
                As a result, let's increment the count for that `word`. */
